@@ -202,10 +202,10 @@ colors {
 # my customisations
 
 set $wallpaper "/home/dara/Pictures/wallpapers/round.png"
-set $lock "/home/dara/Pictures/wallpapers/lock.png"
+set $lockscreen "/home/dara/Pictures/wallpapers/lock.png"
 
 # lock
-bindsym $mod+Shift+o exec i3lock --image=$lock --ignore-empty-password --no-unlock-indicator
+bindsym $mod+Shift+o exec i3lock --image=$lockscreen --ignore-empty-password --no-unlock-indicator
 
 # this needed changes to /etc/X11/xorg.conf making sure intel_backlight there
 # Screen brightness controls
@@ -220,7 +220,6 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # custom wallpaper
 exec_always feh --bg-scale $wallpaper 
 
-#
 hide_edge_borders both
 
 # redshift
