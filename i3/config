@@ -201,6 +201,8 @@ colors {
 
 # my customisations
 
+hide_edge_borders both
+
 set $wallpaper "/home/dara/Pictures/wallpapers/round.png"
 set $lockscreen "/home/dara/Pictures/wallpapers/lock.png"
 
@@ -220,7 +222,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 # custom wallpaper
 exec_always feh --bg-scale $wallpaper 
 
-hide_edge_borders both
+# calendar
+bindsym $mod+c exec gnome-terminal -- calcurse
 
 # redshift
 exec redshift
