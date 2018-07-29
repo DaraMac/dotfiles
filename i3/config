@@ -129,7 +129,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -b 'Exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -m 'Log out of i3?' -t warning -b 'Exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -203,7 +203,7 @@ colors {
 
 hide_edge_borders both
 
-set $wallpaper "/home/dara/Pictures/wallpapers/round.png"
+set $wallpaper "/home/dara/Pictures/wallpapers/wallpaper.png"
 set $lockscreen "/home/dara/Pictures/wallpapers/lock.png"
 
 # lock
@@ -220,10 +220,14 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #d
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # custom wallpaper
-exec_always feh --bg-scale $wallpaper 
+# note: feh makes a wallpaper script
+exec_always feh --force-aliasing --bg-scale $wallpaper 
 
 # calendar
 bindsym $mod+c exec gnome-terminal -- calcurse
+
+# web browser
+bindsym $mod+b exec --no-startup-id firefox
 
 # redshift
 exec redshift
