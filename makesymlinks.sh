@@ -10,7 +10,7 @@
 
 dotdir=~/dotfiles	# dotfiles directory
 olddir=~/dotfiles_old	# old dotfiles backup directory
-files="vimrc"		# space seperated list of files/folders to symlink in homedir
+files="vimrc gitconfig"	# space seperated list of files/folders to symlink in homedir
 
 confdirs="i3 i3status" 	# directories in ~/.config
 
