@@ -1,0 +1,8 @@
+[user]
+	name = dmac
+	email = DaraMac@users.noreply.github.com
+[core]
+	editor = vim
+[credential]
+	# set password caching for 30 minutes
+	helper = cache --timeout 1800
