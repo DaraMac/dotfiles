@@ -13,8 +13,8 @@ syntax on
 
 " set shiftwidth=4
 
-" this is for autocompletion
-" set ignorecase 
+set ignorecase 
+set smartcase
 
 let g:netrw_banner=1
 let g:netrw_liststyle=3
