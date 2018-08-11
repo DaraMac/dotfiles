@@ -5,6 +5,9 @@ set incsearch
 set autowrite
 set switchbuf=useopen
 
+set linebreak
+set display=lastline
+
 " last window always has a statusline
 " set laststatus=2 
 
