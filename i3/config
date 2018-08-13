@@ -204,10 +204,13 @@ colors {
 hide_edge_borders both
 
 set $wallpaper "/home/dara/Pictures/wallpapers/wallpaper.png"
+set $smallwallpaper "/home/dara/Pictures/wallpapers/smallwallpaper.png"
+set $bigwallpaper "/home/dara/Pictures/wallpapers/bigwallpaper.png"
 set $lockscreen "/home/dara/Pictures/wallpapers/lock.png"
+set $biglockscreen "/home/dara/Pictures/wallpapers/biglock.png"
 
 # lock
-bindsym $mod+Shift+o exec i3lock --image=$lockscreen --ignore-empty-password --no-unlock-indicator
+bindsym $mod+Shift+o exec i3lock --image=$biglockscreen --tiling --ignore-empty-password --no-unlock-indicator
 
 # this needed changes to /etc/X11/xorg.conf making sure intel_backlight there
 # Screen brightness controls
@@ -221,7 +224,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 
 # custom wallpaper
 # note: feh makes a wallpaper script
-exec_always feh --force-aliasing --bg-scale $wallpaper 
+exec_always feh --force-aliasing --bg-center $smallwallpaper $bigwallpaper 
 
 # calendar
 bindsym $mod+c exec gnome-terminal -- calcurse
