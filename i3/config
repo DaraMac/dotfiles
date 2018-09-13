@@ -206,11 +206,11 @@ hide_edge_borders both
 set $wallpaper "/home/dara/Pictures/wallpapers/wallpaper.png"
 set $smallwallpaper "/home/dara/Pictures/wallpapers/smallwallpaper.png"
 set $bigwallpaper "/home/dara/Pictures/wallpapers/bigwallpaper.png"
-set $lockscreen "/home/dara/Pictures/wallpapers/lock.png"
+set $lockscreen "/home/dara/Pictures/wallpapers/smalllock.png"
 set $biglockscreen "/home/dara/Pictures/wallpapers/biglock.png"
 
 # lock
-bindsym $mod+Shift+o exec i3lock --image=$biglockscreen --tiling --ignore-empty-password --no-unlock-indicator
+bindsym $mod+Shift+o exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator
 
 # this needed changes to /etc/X11/xorg.conf making sure intel_backlight there
 # Screen brightness controls

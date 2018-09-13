@@ -8,13 +8,11 @@ set switchbuf=useopen
 set linebreak
 set display=lastline
 
-" last window always has a statusline
-" set laststatus=2 
-
 filetype indent on
 syntax on
 
-" set shiftwidth=4
+set tabstop=4
+set shiftwidth=4
 
 set ignorecase 
 set smartcase
