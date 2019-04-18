@@ -11,8 +11,11 @@ set display=lastline
 filetype indent on
 syntax on
 
-set tabstop=4
-set shiftwidth=4
+" set tabstop=4
+" set shiftwidth=4
+
+" https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
+set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
 set ignorecase 
 set smartcase
