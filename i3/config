@@ -205,10 +205,10 @@ set $biglockscreen "/home/dara/Pictures/wallpapers/biglock.png"
 # lock
 bindsym $mod+Shift+o exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator
 
-# this needed changes to /etc/X11/xorg.conf making sure intel_backlight there
+
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2.5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2.5 # decrease screen brightness
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
