@@ -173,8 +173,7 @@ mode "power" {
 mode "monitor" {
         bindsym d exec /home/dara/.screenlayout/dualMonitor.sh
         bindsym l exec /home/dara/.screenlayout/laptop.sh
-        bindsym s exec /home/dara/.screenlayout/soloMonitor.sh
-        bindsym g exec /home/dara/.screenlayout/gaming.sh
+        bindsym e exec /home/dara/.screenlayout/externalMonitor.sh
 
         # return to normal mode
         bindsym Return mode "default"
