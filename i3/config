@@ -222,4 +222,4 @@ exec_always feh --force-aliasing --bg-center $smallwallpaper $bigwallpaper
 bindsym $mod+b exec --no-startup-id firefox
 
 # redshift
-exec redshift
+# exec redshift
