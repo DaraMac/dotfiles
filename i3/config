@@ -195,11 +195,11 @@ bar {
 
 hide_edge_borders both
 
-set $wallpaper "/home/dara/Pictures/wallpapers/wallpaper.png"
-set $smallwallpaper "/home/dara/Pictures/wallpapers/smallwallpaper.png"
-set $bigwallpaper "/home/dara/Pictures/wallpapers/bigwallpaper.png"
-set $lockscreen "/home/dara/Pictures/wallpapers/smalllock.png"
-set $biglockscreen "/home/dara/Pictures/wallpapers/biglock.png"
+set $wallpaper "/home/dara/Pictures/Wallpapers/wallpaper.png"
+set $smallwallpaper "/home/dara/Pictures/Wallpapers/smallwallpaper.png"
+set $bigwallpaper "/home/dara/Pictures/Wallpapers/bigwallpaper.png"
+set $lockscreen "/home/dara/Pictures/Wallpapers/smalllock.png"
+set $biglockscreen "/home/dara/Pictures/Wallpapers/biglock.png"
 
 # lock
 bindsym $mod+Shift+o exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator
