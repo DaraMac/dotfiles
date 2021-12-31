@@ -174,7 +174,7 @@ mode "resize" {
 
 # power options
 mode "power" {
-        bindsym s exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator && systemctl suspend
+        bindsym s exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator && systemctl suspend; mode "default"
 
         # return to normal mode
         bindsym Return mode "default"
