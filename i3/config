@@ -20,7 +20,12 @@ set $mod Mod4
 font pango:DejaVu Sans Mono 9
 
 # You can also use any non-zero value if you'd like to have a border
-for_window [class=".*"] border pixel 2
+# for_window [class=".*"] border pixel 2
+# does the same thing as above but neater
+default_border pixel 2
+
+hide_edge_borders both
+
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -44,9 +49,9 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# bindsym $mod+d exec --no-startup-id rofi
+bindsym $mod+space exec rofi -show drun
 
 
 # change focus
@@ -91,7 +96,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+# bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -198,9 +203,8 @@ bar {
         status_command i3status
 }
 
-# My customisations
 
-hide_edge_borders both
+# Wallpapers
 
 set $wallpaper "/home/dara/Pictures/Wallpapers/wallpaper.png"
 set $smallwallpaper "/home/dara/Pictures/Wallpapers/smallwallpaper.png"
@@ -208,8 +212,13 @@ set $bigwallpaper "/home/dara/Pictures/Wallpapers/bigwallpaper.png"
 set $lockscreen "/home/dara/Pictures/Wallpapers/smalllock.png"
 set $biglockscreen "/home/dara/Pictures/Wallpapers/biglock.png"
 
+# custom wallpaper
+# note: feh makes a wallpaper script
+exec_always feh --force-aliasing --bg-center $smallwallpaper $bigwallpaper
+
 # Lock
 bindsym $mod+Shift+o exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator
+
 
 # Scratchpad
 # Make the current focused window a scratchpad
@@ -233,11 +242,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 # mute sound
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
-# custom wallpaper
-# note: feh makes a wallpaper script
-exec_always feh --force-aliasing --bg-center $smallwallpaper $bigwallpaper 
 
-# web browser
+# Web browser
 bindsym $mod+b exec --no-startup-id firefox
 
 # redshift
