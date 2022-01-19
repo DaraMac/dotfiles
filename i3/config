@@ -183,9 +183,11 @@ mode "power" {
 }
 
 mode "monitor" {
-        bindsym d exec /home/dara/.screenlayout/dualMonitor.sh
-        bindsym l exec /home/dara/.screenlayout/laptop.sh
-        bindsym e exec /home/dara/.screenlayout/externalMonitor.sh
+        # TODO can't get this working for returning to single laptop monitor from dual, it won't bring over the windows on the second monitor when `restart` is in there
+        # bindsym l exec /home/dara/.screenlayout/laptop.sh; mode "default"; restart
+        bindsym d exec /home/dara/.screenlayout/dualMonitor.sh; mode "default"; restart
+        bindsym l exec /home/dara/.screenlayout/laptop.sh; mode "default"
+        bindsym e exec /home/dara/.screenlayout/externalMonitor.sh; mode "default"
 
         # return to normal mode
         bindsym Return mode "default"
