@@ -5,6 +5,10 @@ set incsearch
 set autowrite
 set switchbuf=useopen
 
+" so I can switch between buffers without having to save manually
+" https://stackoverflow.com/q/34463800 from the comments here
+set hidden
+
 set linebreak
 set display=lastline
 
@@ -33,6 +37,6 @@ set tags=./tags;/
 
 " https://wiki.sagemath.org/Tips
 " to get sagemath highlighting working
-augroup filetypedetect
-  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
-augroup END
+" augroup filetypedetect
+"   au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
+" augroup END
