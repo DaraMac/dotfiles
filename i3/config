@@ -216,7 +216,10 @@ set $biglockscreen "/home/dara/Pictures/Wallpapers/biglock.png"
 
 # custom wallpaper
 # note: feh makes a wallpaper script
-exec_always feh --force-aliasing --bg-center $smallwallpaper $bigwallpaper
+# exec_always feh --force-aliasing --bg-center $smallwallpaper $bigwallpaper
+
+## wal
+exec_always wal -R
 
 # Lock
 bindsym $mod+Shift+o exec i3lock --image=$lockscreen --tiling --ignore-empty-password --no-unlock-indicator
