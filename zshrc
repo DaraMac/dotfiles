@@ -137,3 +137,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# wal
+cat ~/.cache/wal/sequences
