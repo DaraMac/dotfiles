@@ -3,6 +3,3 @@
 	email = DaraMac@users.noreply.github.com
 [core]
 	editor = vim
-[credential]
-	# set password caching for 2 hours
-	helper = cache --timeout 7200
