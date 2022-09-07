@@ -35,8 +35,5 @@ autocmd FileType netrw setl bufhidden=delete
 " https://stackoverflow.com/questions/5017500/vim-difficulty-setting-up-ctags-source-in-subdirectories-dont-see-tags-file-i
 set tags=./tags;/
 
-" https://wiki.sagemath.org/Tips
-" to get sagemath highlighting working
-" augroup filetypedetect
-"   au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
-" augroup END
+" used to activate lambdapi (interactive theorem prover) syntax highlight when installed with opam
+set rtp+=~/.opam/$OPAM_SWITCH_PREFIX/share/vim
