@@ -33,7 +33,7 @@ let g:netrw_altv=1
 autocmd FileType netrw setl bufhidden=delete
 
 " https://stackoverflow.com/questions/5017500/vim-difficulty-setting-up-ctags-source-in-subdirectories-dont-see-tags-file-i
-set tags=./tags;/
+set tags+=./.tags;/
 
 " used to activate lambdapi (interactive theorem prover) syntax highlight when installed with opam
 set rtp+=~/.opam/$OPAM_SWITCH_PREFIX/share/vim
