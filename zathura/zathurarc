@@ -1,0 +1,3 @@
+# to let firefox open links
+# from https://tex.stackexchange.com/a/616746
+set sandbox none
