@@ -36,4 +36,4 @@ autocmd FileType netrw setl bufhidden=delete
 set tags+=./.tags;/
 
 " used to activate lambdapi (interactive theorem prover) syntax highlight when installed with opam
-set rtp+=~/.opam/$OPAM_SWITCH_PREFIX/share/vim
+" set rtp+=~/.opam/$OPAM_SWITCH_PREFIX/share/vim
