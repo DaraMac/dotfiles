@@ -32,6 +32,8 @@ let g:netrw_altv=1
 " to delete netrw's buffer once it's hidden
 autocmd FileType netrw setl bufhidden=delete
 
+autocmd FileType make setl noexpandtab
+
 " https://stackoverflow.com/questions/5017500/vim-difficulty-setting-up-ctags-source-in-subdirectories-dont-see-tags-file-i
 set tags+=./.tags;/
 
