@@ -1,3 +1,13 @@
 [Appearance]
+BackgroundColorOpacity=25
 Blur=true
 Translucency=true
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+KeepOpen=false
+ShowSystrayIcon=false
+ShowTabBar=false
+ShowTitleBar=false
