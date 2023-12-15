@@ -1,3 +1,10 @@
+# run zathura as the pdf viewer, cant remember what the arguments are for
 $pdf_previewer = 'start zathura %O %S';
+
+# tell it to make a pdf directly
+$pdf_mode = 1;
+
+# clean up some extra bits from slides and such
 $clean_ext = 'nav run.xml snm vrb tex.bbl tex.blg';
+
 $bibtex_use = 2;
