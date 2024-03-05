@@ -5,3 +5,7 @@
 	editor = vim
 [init]
         defaultBranch = main
+[merge]
+	conflictstyle = diff3
+[diff]
+	algorithm = histogram
