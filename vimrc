@@ -36,3 +36,7 @@ autocmd FileType make setl noexpandtab
 
 " https://stackoverflow.com/questions/5017500/vim-difficulty-setting-up-ctags-source-in-subdirectories-dont-see-tags-file-i
 set tags+=./.tags;/
+
+" https://unix.stackexchange.com/a/363374
+" to make colours work properly when in tmux
+set background=dark
