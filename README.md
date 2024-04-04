@@ -1,14 +1,14 @@
-dotfiles
-========
+# dotfiles
+Now trying managing them with `stow`.
 
-Where files should go:
-----------------------
+https://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
+
+So far only implemented for nvim.
+
+## Where files should go:
 
 A name ending in a "/" indicates it refers to a directory.
 - i3/ -> ~/.config/
 - i3config/ -> ~/.config/
 - gitconfig -> ~/.gitconfig
 - vimrc -> ~/.vimrc
-
-### Notes ###
-.zshrc not yet added to `makesymlinks.sh`
