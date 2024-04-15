@@ -28,11 +28,15 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 vim.opt.autowrite = true
 
-vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 3
+vim.opt.cursorline = true
+
+vim.opt.hlsearch = true
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 vim.opt.laststatus = 0
 vim.opt.ruler = false
 
-vim.opt.tags:append('./.tags;/')
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
 
+vim.opt.tags:append('./.tags;/')
