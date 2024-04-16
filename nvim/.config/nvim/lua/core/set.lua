@@ -18,7 +18,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -29,6 +29,8 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.autowrite = true
 
 vim.opt.cursorline = true
+
+vim.opt.scrolloff = 8
 
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
