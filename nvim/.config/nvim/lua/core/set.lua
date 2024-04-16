@@ -35,6 +35,8 @@ vim.opt.scrolloff = 8
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+vim.opt.termguicolors = true
+
 vim.opt.laststatus = 0
 vim.opt.ruler = false
 
