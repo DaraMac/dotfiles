@@ -37,7 +37,6 @@ vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 vim.opt.termguicolors = true
 
-vim.opt.laststatus = 0
 vim.opt.ruler = false
 
 vim.g.netrw_banner = 0
