@@ -11,6 +11,8 @@ vim.opt.clipboard:append {"unnamedplus"}
 
 vim.opt.breakindent = true
 
+vim.opt.timeoutlen = 300
+
 vim.opt.tabstop     = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth  = 4
@@ -43,3 +45,11 @@ vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 
 vim.opt.tags:append('./.tags;/')
+
+vim.api.nvim_create_autocmd('TextYankPost', {
+    desc = 'Highlight when yanking (copying) text',
+    group = vim.api.nvim_create_augroup('highlight-yank', { clear = true}),
+    callback = function()
+        vim.highlight.on_yank()
+    end
+})
