@@ -142,3 +142,7 @@ cat ~/.cache/wal/sequences
 
 # opam configuration
 [[ ! -r /home/dara/.opam/opam-init/init.zsh ]] || source /home/dara/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+# make man use bat as its pager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
