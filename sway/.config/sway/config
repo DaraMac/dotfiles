@@ -22,7 +22,7 @@ hide_edge_borders smart
 # on the original workspace that the command was run on.
 # set $menu bemenu-run
 # set $menu wofi --show=drun | xargs swaymsg exec --
-set $menu fuzzel
+set $menu fuzzel --dpi-aware=yes
 
 ### Output configuration
 #
