@@ -221,6 +221,7 @@ bar {
 bar {
     position bottom
     output DP-1
+    tray_output none
     colors {
         statusline #ffffff
         background #000000
@@ -232,6 +233,7 @@ bar {
 bar {
     position bottom
     output DP-3
+    tray_output none
     colors {
         statusline #ffffff
         background #000000
