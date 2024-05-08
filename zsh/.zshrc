@@ -138,7 +138,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # wal
-cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences
 
 # opam configuration
 [[ ! -r /home/dara/.opam/opam-init/init.zsh ]] || source /home/dara/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
