@@ -1,13 +1,14 @@
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
-vim.opt.guicursor = ""
+vim.opt.guicursor = ''
 
 vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.mouse = 'a'
 
-vim.opt.clipboard:append {"unnamedplus"}
+vim.opt.clipboard:append {'unnamedplus'}
 
 vim.opt.breakindent = true
 
