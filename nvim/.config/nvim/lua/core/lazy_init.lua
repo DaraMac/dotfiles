@@ -220,6 +220,7 @@ require("lazy").setup({
                         },
                     },
                 },
+                clangd = {},
             }
 
             -- Ensure the servers and tools above are installed
