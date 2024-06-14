@@ -204,47 +204,49 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # Status Bar
+bar swaybar_command waybar
+
 # Read `man 5 sway-bar` for more information about this section.
-bar {
-    position bottom
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while ~/.config/sway/status.sh; do sleep 1; done
-
-    output eDP-1
-
-    colors {
-        statusline #ffffff
-        background #000000
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
-
-# upright monitor bar
-# note we're not putting any status command on these extra monitors
-bar {
-    position bottom
-    output DP-1
-    tray_output none
-    colors {
-        statusline #ffffff
-        background #000000
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
-
-# big monitor bar
-bar {
-    position bottom
-    output DP-3
-    tray_output none
-    colors {
-        statusline #ffffff
-        background #000000
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
-}
+# bar {
+#     position bottom
+# 
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while ~/.config/sway/status.sh; do sleep 1; done
+# 
+#     output eDP-1
+# 
+#     colors {
+#         statusline #ffffff
+#         background #000000
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+# 
+# # upright monitor bar
+# # note we're not putting any status command on these extra monitors
+# bar {
+#     position bottom
+#     output DP-1
+#     tray_output none
+#     colors {
+#         statusline #ffffff
+#         background #000000
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
+# 
+# # big monitor bar
+# bar {
+#     position bottom
+#     output DP-3
+#     tray_output none
+#     colors {
+#         statusline #ffffff
+#         background #000000
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
 
 # Make gtk applications start faster
 # It seems to work?
