@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Ferdium Ozone
-Exec=/opt/Ferdium/ferdium  --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+Exec=/opt/Ferdium/ferdium --enable-features=UseOzonePlatform --ozone-platform=wayland %U
 Terminal=false
 Type=Application
 Icon=ferdium
