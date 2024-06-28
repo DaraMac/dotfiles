@@ -7,8 +7,6 @@ plugins=(git zsh-syntax-highlighting z pass conda-zsh-completion)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
