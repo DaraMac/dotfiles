@@ -24,12 +24,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# opam configuration
-[[ ! -r /Users/daramac/.opam/opam-init/init.zsh ]] || source /Users/daramac/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
-
-# Created by `pipx` on 2023-12-04 17:06:50
-export PATH="$PATH:/Users/daramac/.local/bin"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
