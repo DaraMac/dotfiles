@@ -516,7 +516,9 @@ require("lazy").setup({
 
             ui = {
                 enable = false,
-            }
+            },
+
+            disable_frontmatter = true,
         },
     }
 })
