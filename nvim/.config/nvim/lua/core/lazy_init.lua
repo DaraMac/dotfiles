@@ -497,15 +497,21 @@ require("lazy").setup({
                 {
                     name = "notes",
                     path = "~/College/notes",
+                    overrides = {
+                        templates = {
+                            folder = "Meta/Templates"
+                        }
+                    }
                 },
                 {
                     name = "wiki",
                     path = "~/Documents/wiki",
+                    overrides = {
+                        templates = {
+                            folder = "Templates"
+                        }
+                    }
                 },
-            },
-
-            templates = {
-                folder = "Meta/Templates"
             },
 
             daily_notes = {
