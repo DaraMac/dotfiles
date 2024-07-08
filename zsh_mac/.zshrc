@@ -22,6 +22,10 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+# Alises
+alias vi='nvim'
+alias vim='nvim'
+
 ## Git alises
 alias g='git'
 alias ga='git add'
