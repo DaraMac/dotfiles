@@ -3,7 +3,7 @@ export ZSH="/Users/daramac/.oh-my-zsh"
 
 ZSH_THEME="dracula"
 
-plugins=(zsh-syntax-highlighting z pass conda-zsh-completion)
+plugins=(zsh-syntax-highlighting pass conda-zsh-completion)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -269,3 +269,6 @@ alias gstu='gsta --include-untracked'
 alias gtl='gtl(){ git tag --sort=-v:refname -n --list "${1}*" }; noglob gtl'
 alias gk='\gitk --all --branches &!'
 alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
+
+# Zoxide
+eval "$(zoxide init zsh)"
