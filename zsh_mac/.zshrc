@@ -3,30 +3,32 @@ export ZSH="/Users/daramac/.oh-my-zsh"
 
 ZSH_THEME="dracula"
 
-plugins=(zsh-syntax-highlighting pass conda-zsh-completion)
-
 source $ZSH/oh-my-zsh.sh
+
+# added to get around using omz
+# autoload -Uz compinit
+# compinit
+#####
+
+# also trying this to get rid of omz
+# https://ianyepan.github.io/posts/moving-away-from-ohmyzsh/
+# autoload -U compinit && compinit
+# zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'#####
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/opt/homebrew/opt/micromamba/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/Users/daramac/micromamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-
 # Alises
+## Neovim
 alias vi='nvim'
 alias vim='nvim'
 
-## Git alises
+## ls
+alias la='lsd -lA'
+alias ll='lsd -l'
+alias lr="lsd -lr"
+alias ls="lsd"
+
+## Start Git alises
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -273,6 +275,26 @@ alias gstu='gsta --include-untracked'
 alias gtl='gtl(){ git tag --sort=-v:refname -n --list "${1}*" }; noglob gtl'
 alias gk='\gitk --all --branches &!'
 alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
+# End Git aliases
+
 
 # Zoxide
 eval "$(zoxide init zsh)"
+
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/opt/homebrew/opt/micromamba/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/Users/daramac/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<
+
+
+# Syntax highlighting, must be sourced at the end of the file
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

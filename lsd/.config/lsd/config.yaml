@@ -4,6 +4,6 @@ icons:
 date: '+%Y-%m-%d %H:%M'
 
 sorting:
-  dir-grouping: last
+  dir-grouping: first
 
 symlink-arrow: →
