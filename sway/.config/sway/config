@@ -209,6 +209,12 @@ bar {
     swaybar_command waybar
 }
 
+# Notifications centre Daemon
+exec swaync
+
+# Toggle control centre
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
 # Make gtk applications start faster
 # It seems to work?
 # https://github.com/swaywm/sway/issues/5732#issuecomment-1215516704
