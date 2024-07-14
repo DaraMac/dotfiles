@@ -13,6 +13,7 @@
   gnupg
   kdePackages.yakuake
   libsForQt5.polonium
+  lsd
   lutris
   meslo-lgs-nf
   mpv
