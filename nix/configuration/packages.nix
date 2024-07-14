@@ -4,6 +4,7 @@
   anki
   bat
   bottles
+  brave
   deluge
   ferdium
   file
@@ -24,6 +25,7 @@
   stow
   thunderbird
   tmux
+  tree-sitter
   unrar-free
   unzip
   wineWowPackages.waylandFull
