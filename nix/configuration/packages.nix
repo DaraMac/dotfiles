@@ -17,6 +17,7 @@
   lutris
   meslo-lgs-nf
   mpv
+  nodejs-slim
   obsidian
   pass
   pinentry-qt
