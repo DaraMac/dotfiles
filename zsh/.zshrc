@@ -19,7 +19,10 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-## Aliases
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Aliases
 ## Neovim
 alias vi='nvim'
 alias vim='nvim'
@@ -30,15 +33,12 @@ alias ll='lsd -l'
 alias lr="lsd -lr"
 alias ls="lsd"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Make man use bat as its pager
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
 
 # opam configuration
 [[ ! -r /home/dara/.opam/opam-init/init.zsh ]] || source /home/dara/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
-
-# make man use bat as its pager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANROFFOPT="-c"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -58,4 +58,3 @@ if [ -f "/home/dara/opt/miniforge/etc/profile.d/mamba.sh" ]; then
     . "/home/dara/opt/miniforge/etc/profile.d/mamba.sh"
 fi
 # <<< conda initialize <<<
-
