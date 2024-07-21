@@ -6,15 +6,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Path to your oh-my-zsh installation.
-export ZSH="/home/dara/.oh-my-zsh"
+# added to get around using omz
+# autoload -Uz compinit
+# compinit
+#####
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
-source $ZSH/oh-my-zsh.sh
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Powerlevel10k loading and configuration
+source ~/opt/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.p10k.zsh
 
 # Aliases
 ## Neovim
