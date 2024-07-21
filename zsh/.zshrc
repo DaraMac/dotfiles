@@ -16,6 +16,9 @@ source ~/opt/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.p10k.zsh
 
 # Aliases
+# Just necessary on Ubuntu
+alias bat='batcat'
+
 ## Neovim
 alias vi='nvim'
 alias vim='nvim'
@@ -278,10 +281,6 @@ alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
 # Zoxide
 eval "$(zoxide init zsh)"
 
-
-# Make man use bat as its pager
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-export MANROFFOPT="-c"
 
 # opam configuration
 [[ ! -r /home/dara/.opam/opam-init/init.zsh ]] || source /home/dara/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
