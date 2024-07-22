@@ -296,5 +296,11 @@ if [ -f "/home/dara/opt/miniforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+# Use bat for highighted manual
+# Need to use batcat on Ubuntu
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+export MANROFFOPT="-c"
+
+
 # Syntax highlighting, must be sourced at the end of the file
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
