@@ -8,8 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad"
+        "sway/scratchpad",
+        "sway/mode"
     ],
     "modules-center": [
         "sway/window"
@@ -19,6 +19,7 @@
         "battery",
         "network",
         "clock",
+        "clock#time",
         "tray"
     ],
     // Modules configuration
@@ -37,7 +38,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%Y-%m-%d %a %H:%M}",
+        "format": "{:%Y-%m-%d %a}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>",
         "calendar": {
             "format": {
@@ -49,44 +50,49 @@
         },
         "on-click": "gnome-calendar"
     },
+    "clock#time": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%I:%M %p %Z %z}",
+        "on-click": "gnome-clocks"
+    },
     "battery": {
-        "format": "{capacity}% 🔋",
+        "format": "{capacity}% {icon}",
+        "format-icons": ["🪫", "🔋"],
         "format-full": "{capacity}% 🔋",
         "format-charging": "{capacity}% ⚡",
         "format-alt": "{time}",
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "{ipaddr}/{cidr} 🌐",
+        "tooltip-format": "{ifname} via {gwaddr} 🌐",
+        "format-linked": "{ifname} (No IP) 🌐",
         "format-disconnected": "Disconnected ⚠",
         "on-click": "nm-applet"
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": "",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-bluetooth": "{volume}%  {icon}",
+        "format-bluetooth-muted": "  {icon}",
+        "format-muted": "",
+        "format-source": "{volume}%",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": "🎧",
+            "headset": "🎧",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol" // TODO: don't have pavucontrol 
+        "on-click": "flatpak run com.saivert.pwvucontrol"
     }
 },
 {
     // output on all monitors EXCEPT the laptop screen
     "output": "!eDP-1",
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 28, // Waybar height (to be removed for auto height)
-    "spacing": 0, // Gaps between modules (4px)
+    "position": "bottom",
+    "height": 28,
+    "spacing": 0,
 
-    // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
         "sway/mode"
