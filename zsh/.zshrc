@@ -19,6 +19,10 @@ source ~/.p10k.zsh
 # Just necessary on Ubuntu
 alias bat='batcat'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 ## Neovim
 alias vi='nvim'
 alias vim='nvim'
