@@ -9,18 +9,20 @@ set $down j
 set $up k
 set $right l
 
-
-# Your preferred terminal emulator
+# Preferred terminal emulator
 set $term foot
+
+# Preferred web browser
+set $browser firefox
+
+# Preferred application launcher
+# Note: pass the final command to swaymsg so that the resulting window
+# can be opened on the original workspace that the command was run on.
+set $menu fuzzel --dpi-aware=yes
 
 # Windows
 default_border pixel 1
 hide_edge_borders smart
-
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-set $menu fuzzel --dpi-aware=yes
 
 ### Output configuration
 
@@ -59,8 +61,8 @@ input "type:keyboard" {
     # Start a terminal
     bindsym $mod+Return exec $term
 
-    # Start firefox
-    bindsym $mod+b exec firefox
+    # Start web [b]rowser
+    bindsym $mod+b exec $browser
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -75,10 +77,10 @@ input "type:keyboard" {
     # mouse button for dragging.
     floating_modifier $mod normal
 
-    # Reload the configuration file
+    # Reload the [c]onfiguration file
     bindsym $mod+Shift+c reload
 
-    # Exit sway (logs you out of your Wayland session)
+    # [e]xit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you wish to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
@@ -192,16 +194,23 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# Audio
+
+# Special Function keys
+## Audio
 bindsym --locked XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- -l 1.2
 bindsym --locked XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1.2
 
-# Brightness
+## Media Player
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+## Brightness
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
-# Screenshot
+## Screenshot
 bindsym Print exec grim -g "$(slurp)" - | wl-copy
 
 
