@@ -50,16 +50,10 @@
         "on-click": "gnome-calendar"
     },
     "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
+        "format": "{capacity}% 🔋",
+        "format-full": "{capacity}% 🔋",
+        "format-charging": "{capacity}% ⚡",
+        "format-alt": "{time}",
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
@@ -67,7 +61,7 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "on-click": "nm-applet"
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
