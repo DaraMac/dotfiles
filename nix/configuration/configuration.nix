@@ -162,39 +162,7 @@
 
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # List packages installed in system profile.
-#   environment.systemPackages = with pkgs; [
-#   anki
-#   bat
-#   bottles
-#   deluge
-#   ferdium
-#   file
-#   gcc
-#   git
-#   gnupg
-#   kdePackages.yakuake
-#   libsForQt5.polonium
-#   lutris
-#   meslo-lgs-nf
-#   mpv
-#   obsidian
-#   pass
-#   pinentry-qt
-#   python3
-#   renameutils
-#   ripgrep
-#   stow
-#   thunderbird
-#   tmux
-#   unrar-free
-#   unzip
-#   wl-clipboard
-#   zotero_7
-#   zsh-powerlevel10k
-#   ];
-# 
- # Add media controls so KDE Connect works, and make the UI nicer
+ # Add media controls to mpv so KDE Connect works, and make the UI nicer
   nixpkgs.overlays = [
     (self: super: {
       mpv = super.mpv.override {
