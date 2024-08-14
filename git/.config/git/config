@@ -8,4 +8,6 @@
 [merge]
 	conflictstyle = diff3
 [diff]
-	algorithm = histogram
+    algorithm = histogram
+[pull]
+    rebase = true
