@@ -21,6 +21,7 @@
   obsidian
   pass
   pinentry-qt
+  prismlauncher
   python3
   renameutils
   ripgrep
@@ -30,7 +31,7 @@
   tree-sitter
   unrar-free
   unzip
-  wineWowPackages.waylandFull
+  vesktop
   wl-clipboard
   zathura
   zotero_7
