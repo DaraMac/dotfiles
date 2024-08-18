@@ -7,6 +7,7 @@
         brave
         btop
         deluge
+        fastfetch
         fd
         ferdium
         file
