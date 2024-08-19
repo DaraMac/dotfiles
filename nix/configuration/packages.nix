@@ -16,15 +16,18 @@
         git
         gnupg
         kdePackages.yakuake
+        libnotify
         lsd
         lutris
         meslo-lgs-nf
         mpv
         nodejs-slim
         obsidian
+        openpomodoro-cli
         pass
         pinentry-qt
         polonium
+        pomodoro-gtk
         prismlauncher
         python3
         renameutils
