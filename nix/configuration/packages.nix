@@ -12,6 +12,7 @@
         ferdium
         file
         gcc
+        gdu
         git
         gnupg
         kdePackages.yakuake
