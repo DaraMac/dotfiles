@@ -47,7 +47,7 @@
     kate
   ];
 
-  programs.hyprland.enable = true;
+  programs.sway.enable = true;
 
   # Enable OpenGL
   hardware.graphics = {
