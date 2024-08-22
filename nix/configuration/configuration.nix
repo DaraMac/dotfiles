@@ -12,10 +12,9 @@
   boot.loader.grub.device = "/dev/nvme0n1";
   boot.loader.grub.useOSProber = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
-
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.hostName = "nixos"; # Define your hostname.
 
   # Set your time zone.
   time.timeZone = "Europe/Dublin";
