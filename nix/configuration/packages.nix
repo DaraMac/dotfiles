@@ -40,6 +40,7 @@
         unzip
         vesktop
         wl-clipboard
+        yazi
         zathura
         zotero_7
         zsh-powerlevel10k
