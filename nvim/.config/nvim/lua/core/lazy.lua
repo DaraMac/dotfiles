@@ -203,10 +203,23 @@ require("lazy").setup({
             --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
             local servers = {
                 -- See `:help lspconfig-all` for a list of all the pre-configured LSPs
-                -- basedpyright = {},
+                basedpyright = {
+                    settings = {
+                        basedpyright = {
+                            analysis = {
+                                diagnosticSeverityOverrides = {
+                                    reportAny = false,
+                                    reportImplicitOverride = false,
+                                    reportIncompatibleMethodOverride = false,
+                                    reportPossiblyUnboundVariable = false
+                                }
+                            }
+                        }
+                    }
+                },
                 clangd = {},
-                jedi_language_server = {},
-
+                debugpy = {},
+                -- jedi_language_server = {},
                 lua_ls = {
                     settings = {
                         Lua = {
@@ -214,10 +227,13 @@ require("lazy").setup({
                                 callSnippet = "Replace",
                             },
                             -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-                            -- diagnostics = { disable = { 'missing-fields' } },
+                            diagnostics = { disable = { 'missing-fields' } },
                         },
                     },
                 },
+                ruff = {},
+                stylua = {},
+                texlab = {}
             }
 
             -- Ensure the servers and tools above are installed
@@ -228,8 +244,8 @@ require("lazy").setup({
             -- for you, so that they are available from within Neovim.
             local ensure_installed = vim.tbl_keys(servers or {})
             vim.list_extend(ensure_installed, {
-                "stylua",
-                "ruff"
+                -- "stylua",
+                -- "ruff"
             })
             require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
