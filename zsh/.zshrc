@@ -317,3 +317,6 @@ export MANROFFOPT="-c"
 
 # Syntax highlighting, must be sourced at the end of the file
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Created by `pipx` on 2024-08-26 16:19:43
+export PATH="$PATH:/home/dara/.local/bin"
