@@ -11,6 +11,10 @@ fi
 # compinit
 #####
 
+# Created by `pipx` on 2024-08-26 16:19:43
+export PATH="$PATH:/home/dara/.local/bin"
+
+
 # Powerlevel10k loading and configuration
 source ~/opt/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.p10k.zsh
@@ -314,9 +318,5 @@ fi
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 export MANROFFOPT="-c"
 
-
 # Syntax highlighting, must be sourced at the end of the file
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Created by `pipx` on 2024-08-26 16:19:43
-export PATH="$PATH:/home/dara/.local/bin"
