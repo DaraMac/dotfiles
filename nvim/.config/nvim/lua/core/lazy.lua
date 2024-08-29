@@ -454,7 +454,7 @@ require("lazy").setup({
             'nvim-treesitter/nvim-treesitter-textobjects'
         },
         opts = {
-            ensure_installed = { 'bash', 'c', 'css', 'diff', 'html', 'javascript', 'json', 'latex', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'python', 'toml', 'vim', 'vimdoc', 'yaml' },
+            ensure_installed = { 'bash', 'c', 'css', 'csv', 'diff', 'html', 'javascript', 'json', 'latex', 'lua', 'luadoc', 'markdown', 'markdown_inline', 'python', 'toml', 'vim', 'vimdoc', 'yaml' },
             -- Autoinstall languages that are not installed
             auto_install = true,
             highlight = {
