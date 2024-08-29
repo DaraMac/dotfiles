@@ -33,7 +33,8 @@ vim.opt.autowrite     = true
 
 vim.opt.cursorline    = true
 
-vim.opt.scrolloff     = 8
+-- Setting it to a very large value to just keep it always in centre
+vim.opt.scrolloff     = 999
 
 vim.opt.hlsearch      = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
