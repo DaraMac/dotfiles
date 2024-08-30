@@ -15,12 +15,16 @@
         gdu
         git
         gnupg
+        hledger
+        hledger-ui
+        hledger-web
         kdePackages.yakuake
         libnotify
         lsd
         lutris
         meslo-lgs-nf
         mpv
+        newsboat
         nodejs-slim
         obsidian
         openpomodoro-cli
