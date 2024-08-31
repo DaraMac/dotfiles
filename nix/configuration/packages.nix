@@ -16,6 +16,7 @@
         gdu
         git
         gnupg
+        heroic
         hledger
         hledger-ui
         hledger-web
