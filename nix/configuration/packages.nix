@@ -11,6 +11,7 @@
         fd
         ferdium
         file
+        fzf
         gcc
         gdu
         git
