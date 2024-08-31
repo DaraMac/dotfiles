@@ -1,6 +1,6 @@
 { pkgs, ...}:
 {
-  environment.systemPackages = with pkgs; [
+    environment.systemPackages = with pkgs; [
         anki
         bat
         bottles
@@ -49,5 +49,5 @@
         zathura
         zotero_7
         zsh-powerlevel10k
-  ];
+    ];
 }
