@@ -45,7 +45,7 @@
     # services.displayManager.sddm.wayland.enable = true;
 
     # Enable COSMIC desktop
-    services.desktopManager.cosmic.enable = true
+    services.desktopManager.cosmic.enable = true;
     services.displayManager.cosmic-greeter.enable = true;
 
     environment.plasma6.excludePackages = with pkgs.kdePackages; [
