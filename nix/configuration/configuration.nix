@@ -43,13 +43,14 @@
     services.desktopManager.plasma6.enable = true;
     services.displayManager.defaultSession = "plasma";
     # services.displayManager.sddm.wayland.enable = true;
+
+    # Enable COSMIC desktop
+    services.desktopManager.cosmic.enable = true
     services.displayManager.cosmic-greeter.enable = true;
 
     environment.plasma6.excludePackages = with pkgs.kdePackages; [
         kate
     ];
-
-    programs.sway.enable = true;
 
     # Enable OpenGL
     hardware.graphics = {
