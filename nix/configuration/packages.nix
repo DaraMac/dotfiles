@@ -15,7 +15,7 @@
         gcc
         gdu
         git
-        gnome.gnome-calendar
+        gnome-calendar
         gnupg
         heroic
         hledger
