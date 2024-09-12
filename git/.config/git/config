@@ -1,15 +1,15 @@
 [core]
 	editor = vim
 [diff]
-    algorithm = histogram
+	algorithm = histogram
 [init]
 	defaultBranch = main
 [merge]
 	conflictstyle = diff3
 [pull]
-    rebase = true
+	rebase = true
 [push]
-    autoSetupRemote = true
+	autoSetupRemote = true
 [user]
 	name = dmac
 	email = DaraMac@users.noreply.github.com
