@@ -295,6 +295,8 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 # Syntax highlighting, must be sourced at the end of the file
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
