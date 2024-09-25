@@ -31,6 +31,9 @@ alias ....='cd ../../..'
 alias vi='nvim'
 alias vim='nvim'
 
+## fzf
+alias v='nvim $(fzf)'
+
 ## ls
 alias la='lsd -lA'
 alias ll='lsd -l'
