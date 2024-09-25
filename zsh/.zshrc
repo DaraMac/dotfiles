@@ -318,8 +318,5 @@ fi
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
 export MANROFFOPT="-c"
 
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-
 # Syntax highlighting, must be sourced at the end of the file
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
