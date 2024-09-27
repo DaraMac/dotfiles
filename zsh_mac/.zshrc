@@ -22,6 +22,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 alias vi='nvim'
 alias vim='nvim'
 
+## fzf
+alias v='nvim $(fzf)'
+
 ## ls
 alias la='lsd -lA'
 alias ll='lsd -l'
