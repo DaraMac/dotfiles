@@ -30,16 +30,15 @@
         newsboat
         nodejs-slim
         obsidian
-        openpomodoro-cli
         pass
         pinentry-qt
         polonium
-        pomodoro-gtk
         prismlauncher
         python3
         renameutils
         ripgrep
         stow
+        stretchly
         thunderbird
         tmux
         tree-sitter
