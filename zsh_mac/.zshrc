@@ -301,5 +301,15 @@ unset __mamba_setup
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# Add recommended function for yazi that changes directory on close
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # Syntax highlighting, must be sourced at the end of the file
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
