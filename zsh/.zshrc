@@ -14,6 +14,12 @@ fi
 # Created by `pipx` on 2024-08-26 16:19:43
 export PATH="$PATH:/home/dara/.local/bin"
 
+# Append cargo to the path
+path+=('/home/dara/.cargo/bin')
+export PATH
+
+# Location of file for time-tracker bartib
+export BARTIB_FILE='/home/dara/.local/share/bartib/activities.bartib'
 
 # Powerlevel10k loading and configuration
 source ~/opt/powerlevel10k/powerlevel10k.zsh-theme
