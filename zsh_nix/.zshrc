@@ -11,6 +11,9 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ###############################################################################
 
+# Location of file for time-tracker bartib
+export BARTIB_FILE='/home/dara/.local/share/bartib/activities.bartib'
+
 alias ga="git add"
 alias gb="git branch"
 alias gba="git branch --all"
