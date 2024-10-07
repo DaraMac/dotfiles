@@ -9,6 +9,10 @@
             url = "github:lilyinstarlight/nixos-cosmic";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+
+        k-framework = {
+            url = "github:runtimeverification/k";
+        };
     };
 
     outputs = { self, nixpkgs, nixos-cosmic, ... }@inputs: {
@@ -22,11 +26,12 @@
 
                 {
                     nix.settings = {
-                        substituters = [ "https://cosmic.cachix.org" ];
-                        trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+                        substituters = [ "https://cosmic.cachix.org" "https://cache.iog.io" ];
+                        trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" "hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ="];
                     };
                 }
                 nixos-cosmic.nixosModules.default
+                k-framework.defaultPackage
             ];
         };
     };
