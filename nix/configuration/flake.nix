@@ -31,7 +31,7 @@
                     };
                 }
                 nixos-cosmic.nixosModules.default
-                k-framework
+                k-framework.defaultPackage
             ];
         };
     };
