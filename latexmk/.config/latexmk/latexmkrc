@@ -1,5 +1,5 @@
 # Run zathura as the pdf viewer, cant remember what the arguments are for
-$pdf_previewer = 'start zathura %O %S';
+$pdf_previewer = 'zathura %O %S';
 
 # Tell it to make a pdf directly using pdflatex
 #$pdf_mode = 1;
