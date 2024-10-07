@@ -2,6 +2,7 @@
 {
     environment.systemPackages = with pkgs; [
         anki
+        bartib
         bat
         bottles
         brave
@@ -38,7 +39,7 @@
         renameutils
         ripgrep
         stow
-        stretchly
+        stretchly # no breaktimer on nix
         thunderbird
         tmux
         tree-sitter
