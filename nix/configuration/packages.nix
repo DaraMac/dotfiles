@@ -17,6 +17,7 @@
         gdu
         git
         gnome-calendar
+        gnumake
         gnupg
         heroic
         hledger
