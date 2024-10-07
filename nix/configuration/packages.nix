@@ -41,6 +41,7 @@
         ripgrep
         stow
         stretchly # no breaktimer on nix
+        texliveMedium
         thunderbird
         tmux
         tree-sitter
