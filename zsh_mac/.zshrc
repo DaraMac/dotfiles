@@ -17,6 +17,10 @@ source $ZSH/oh-my-zsh.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Location of current ledger file for hledger
+export LEDGER_FILE='/Users/daramac/Documents/accounts/2024.journal'
+
+# Location of current file for time-tracker bartib
 export BARTIB_FILE='/Users/daramac/.local/share/bartib/activities.bartib'
 
 # Alises
