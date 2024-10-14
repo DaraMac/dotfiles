@@ -17,6 +17,7 @@
         gdu
         git
         gnome-calendar
+        gnome-clocks
         gnumake
         gnupg
         heroic
