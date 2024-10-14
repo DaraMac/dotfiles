@@ -23,6 +23,7 @@
         hledger
         hledger-ui
         hledger-web
+        inkscape
         kdePackages.yakuake
         libnotify
         lsd
