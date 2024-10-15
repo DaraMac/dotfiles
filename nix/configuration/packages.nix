@@ -7,6 +7,7 @@
         bottles
         brave
         btop
+        dafny
         deluge
         fastfetch
         fd
