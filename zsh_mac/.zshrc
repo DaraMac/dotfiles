@@ -29,7 +29,7 @@ alias vi='nvim'
 alias vim='nvim'
 
 ## fzf
-alias v='nvim $(fzf)'
+alias v="fzf --bind 'enter:become(nvim {})'"
 
 ## ls
 alias la='lsd -lA'
