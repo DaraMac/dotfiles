@@ -37,7 +37,7 @@ alias ll='lsd -l'
 alias lr="lsd -lr"
 alias ls="lsd"
 
-## Start Git alises
+## Start git alises
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -284,7 +284,7 @@ alias gstu='gsta --include-untracked'
 alias gtl='gtl(){ git tag --sort=-v:refname -n --list "${1}*" }; noglob gtl'
 alias gk='\gitk --all --branches &!'
 alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
-# End Git aliases
+# End git aliases
 
 
 # Zoxide
