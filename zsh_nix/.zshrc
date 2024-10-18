@@ -17,6 +17,11 @@ export LEDGER_FILE='/home/dara/Documents/accounts/2024.journal'
 # Location of file for time-tracker bartib
 export BARTIB_FILE='/home/dara/.local/share/bartib/activities.bartib'
 
+# Alises
+## fzf
+alias v="fzf --bind 'enter:become(nvim {})'"
+
+## git
 alias ga="git add"
 alias gb="git branch"
 alias gba="git branch --all"
@@ -35,3 +40,7 @@ alias gra="git remote add"
 alias grv="git remote --verbose"
 alias gss="git status --short"
 alias gst="git status"
+
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
