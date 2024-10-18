@@ -276,5 +276,10 @@ alias gk='\gitk --all --branches &!'
 alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
 # End git aliases
 
+# Use bat for highighted manual
+# Need to use batcat on Ubuntu
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT="-c"
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
