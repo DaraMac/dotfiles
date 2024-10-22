@@ -9,7 +9,22 @@ fi
 # added to get around using omz
 # autoload -Uz compinit
 # compinit
-#####
+
+# history config
+export HISTFILE=~/.zsh_history
+
+# how many commands loaded to memory
+export HISTSIZE=10000
+
+# how many commands to save on file
+export SAVEHIST=10000
+
+# don't save duplicates
+setopt HIST_IGNORE_ALL_DUPS
+
+# don't show duplicates on search
+setopt HIST_FIND_NO_DUPS
+
 
 # Created by `pipx` on 2024-08-26 16:19:43
 export PATH="$PATH:/home/dara/.local/bin"
