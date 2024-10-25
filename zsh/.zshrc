@@ -337,6 +337,10 @@ if [ -f "/home/dara/opt/miniforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
+# Completions for uv and uvx
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+
 # Use bat for highighted manual
 # Need to use batcat on Ubuntu
 export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
