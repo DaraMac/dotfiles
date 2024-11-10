@@ -284,5 +284,15 @@ export MANROFFOPT="-c"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+# Setup yazi alias
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
+
 # Zoxide
 eval "$(zoxide init zsh)"
