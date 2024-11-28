@@ -1,17 +1,17 @@
 [core]
     editor = nvim
 [diff]
-	algorithm = histogram
+    algorithm = histogram
 [init]
     defaultBranch = main
 [log]
     date = iso
 [merge]
-	conflictstyle = diff3
+    conflictstyle = diff3
 [pull]
-	rebase = true
+    rebase = true
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
 [user]
-	name = dmac
-	email = DaraMac@users.noreply.github.com
+    name = dmac
+    email = DaraMac@users.noreply.github.com
