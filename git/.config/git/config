@@ -3,7 +3,9 @@
 [diff]
 	algorithm = histogram
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[log]
+    date = iso
 [merge]
 	conflictstyle = diff3
 [pull]
