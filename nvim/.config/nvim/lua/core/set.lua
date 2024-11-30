@@ -21,7 +21,7 @@ vim.opt.expandtab     = true
 
 vim.opt.smartindent   = true
 
-vim.opt.termguicolors = false
+vim.opt.termguicolors = true
 
 vim.opt.ignorecase    = true
 vim.opt.smartcase     = true
@@ -38,8 +38,6 @@ vim.opt.scrolloff     = 999
 
 vim.opt.hlsearch      = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-
-vim.opt.termguicolors = true
 
 vim.opt.ruler = false
 
