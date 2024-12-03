@@ -454,7 +454,8 @@ require("lazy").setup({
             'nvim-treesitter/nvim-treesitter-textobjects'
         },
         opts = {
-            ensure_installed = { 'asm', 'bash', 'bibtex', 'c', 'comment', 'cpp', 'css', 'csv', 'desktop', 'diff', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit', 'gitignore', 'gpg', 'html', 'ini', 'java', 'javascript', 'json', 'latex', 'ledger', 'lua', 'luadoc', 'make', 'markdown', 'markdown_inline', 'nix', 'python', 'query', 'r', 'rst', 'toml', 'vim', 'xml', 'vimdoc', 'yaml', 'zathurarc' },
+            -- ensure_installed = { 'asm', 'bash', 'bibtex', 'c', 'comment', 'cpp', 'css', 'csv', 'desktop', 'diff', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit', 'gitignore', 'gpg', 'html', 'ini', 'java', 'javascript', 'json', 'latex', 'ledger', 'lua', 'luadoc', 'make', 'markdown', 'markdown_inline', 'nix', 'python', 'query', 'r', 'rst', 'toml', 'vim', 'xml', 'vimdoc', 'yaml', 'zathurarc' },
+            ensure_installed = { 'asm', 'bash', 'bibtex', 'c', 'comment', 'cpp', 'css', 'csv', 'diff', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit', 'gitignore', 'gpg', 'html', 'ini', 'java', 'javascript', 'json', 'latex', 'ledger', 'lua', 'luadoc', 'make', 'markdown', 'markdown_inline', 'nix', 'python', 'query', 'r', 'rst', 'toml', 'vim', 'xml', 'vimdoc', 'yaml', 'zathurarc' },
             -- Autoinstall languages that are not installed
             auto_install = true,
             highlight = {
