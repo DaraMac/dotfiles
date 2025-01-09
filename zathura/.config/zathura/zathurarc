@@ -1,7 +1,3 @@
-# to let firefox open links
-# https://tex.stackexchange.com/a/616746
-set sandbox none
-
 # to make it copy to the GUI clipboard upon highlight selecting
 # https://unix.stackexchange.com/a/339488
 set selection-clipboard clipboard
