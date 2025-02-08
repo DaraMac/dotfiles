@@ -291,32 +291,15 @@ alias gke='\gitk --all $(git log --walk-reflogs --pretty=%h) &!'
 # Zoxide
 eval "$(zoxide init zsh)"
 
-
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/opt/homebrew/opt/micromamba/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/Users/daramac/micromamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # Add recommended function for yazi that changes directory on close
 function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		builtin cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
 }
-
-# Syntax highlighting, must be sourced at the end of the file
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
