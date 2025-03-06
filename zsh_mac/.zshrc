@@ -15,6 +15,8 @@ source $ZSH/oh-my-zsh.sh
 # autoload -U compinit && compinit
 # zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'#####
 
+source ~/opt/bartibCompletion.sh
+
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # Location of current ledger file for hledger
