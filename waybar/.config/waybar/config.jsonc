@@ -7,9 +7,9 @@
 
     // Choose the order of the modules
     "modules-left": [
-        "sway/workspaces",
+        "hyprland/workspaces",
         "sway/scratchpad",
-        "sway/mode"
+        "hyprland/submap"
     ],
     "modules-center": [
         "sway/window"
@@ -23,7 +23,7 @@
         "tray"
     ],
     // Modules configuration
-    "sway/mode": {
+    "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
     "sway/scratchpad": {
@@ -94,14 +94,14 @@
     "spacing": 0,
 
     "modules-left": [
-        "sway/workspaces",
-        "sway/mode"
+        "hyprland/workspaces",
+        "hyprland/submap"
     ],
     "modules-center": [
         "sway/window"
     ],
     // Modules configuration
-    "sway/mode": {
+    "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     }
 }]
