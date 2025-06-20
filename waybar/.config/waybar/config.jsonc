@@ -1,11 +1,7 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
-    // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
@@ -18,6 +14,7 @@
         "pulseaudio",
         "network",
         "clock",
+        "clock#time",
         "tray",
     ],
     // Modules configuration
@@ -40,14 +37,28 @@
         "spacing": 10,
     },
     "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%Y-%m-%d %a}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "calendar": {
+            "format": {
+                "months":   "<span color='#ffead3'><b>{}</b></span>",
+                "days":     "<span color='#ecc6d9'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today":    "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "on-click": "gnome-calendar"
+    },
+    "clock#time": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%I:%M %p %Z %z}",
+        "on-click": "gnome-clocks"
     },
     "network": {
         "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP)",
+        "format-ethernet": "{ipaddr}/{cidr} 🌐",
+        "tooltip-format": "{ifname} via {gwaddr} 🌐",
+        "format-linked": "{ifname} (No IP) 🌐",
         "format-disconnected": "Disconnected ⚠",
     },
     "pulseaudio": {
