@@ -1,5 +1,6 @@
 // -*- mode: jsonc -*-
-{
+[{
+    "output": "DP-1",
     "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
     "modules-left": [
@@ -78,4 +79,23 @@
         },
         "on-click": "pavucontrol"
     },
-}
+},
+{
+    // output on all monitors EXCEPT the laptop screen
+    "output": "!DP-1",
+    "height": 30, // Waybar height (to be removed for auto height)
+    "spacing": 0, // Gaps between modules (4px)
+
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/submap"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    // Modules configuration
+    "hyprland/submap": {
+        "format": "<span style=\"italic\">{}</span>"
+    }
+}]
