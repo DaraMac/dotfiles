@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 [{
     // main monitor options
-    "output": "DP-1",
+    "output": ["DP-1", "eDP-1"],
     "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
     "modules-left": [
@@ -83,7 +83,7 @@
 },
 {
     // output on all monitors EXCEPT the main monitor
-    "output": "!DP-1",
+    "output": ["!DP-1", "!eDP-1"],
     "height": 40, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
 
