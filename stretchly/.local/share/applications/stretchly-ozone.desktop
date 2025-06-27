@@ -1,0 +1,7 @@
+[Desktop Entry]
+Categories=Utility
+Exec=stretchly --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+GenericName=Stretchly
+Name=Stretchly Ozone
+Type=Application
+Version=1.4
