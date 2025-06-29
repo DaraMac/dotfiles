@@ -1,5 +1,5 @@
 configuration {
-modes: "window,drun,run,combi";
+modes: "window,drun,run,combi,emoji:rofimoji";
 /*	font: "mono 12";*/
 /*	location: 0;*/
 /*	yoffset: 0;*/
