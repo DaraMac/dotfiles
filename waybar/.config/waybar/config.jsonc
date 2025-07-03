@@ -96,7 +96,7 @@
 },
 {
     // output on all monitors EXCEPT the main monitor
-    "output": ["!DP-1", "!eDP-1"],
+    "output": ["!DP-1", "!eDP-1", "DP-3"],
     "height": 40, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
 
