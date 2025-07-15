@@ -56,6 +56,8 @@ window#waybar.hidden {
 #backlight,
 #wireplumber,
 #network,
+#pulseaudio,
+#bluetooth,
 #clock,
 #tray {
   border-radius: 4px;
@@ -111,15 +113,34 @@ window#waybar.hidden {
   padding-right: 17px;
 }
 
-#clock {
+#clock.calendar {
   font-family: JetBrainsMono Nerd Font;
   background-color: #cba6f7;
+}
+
+#clock.time {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #f38ba8;
+}
+
+#bluetooth {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #89b4fa;
+}
+
+#tray {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #b4befe;
+}
+
+#pulseaudio {
+  font-family: JetBrainsMono Nerd Font;
+  background-color: #f5bde6;
 }
 
 #custom-power {
   background-color: #f2cdcd;
 }
-
 
 tooltip {
   border-radius: 8px;
