@@ -64,7 +64,6 @@
         "tooltip-format": "{ifname} via {gwaddr} 🌐",
         "format-linked": "{ifname} (No IP) 🌐",
         "format-disconnected": "Disconnected ⚠",
-        "on-click": "nm-applet"
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
