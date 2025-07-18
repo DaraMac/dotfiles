@@ -4,3 +4,7 @@
 kickstart.lua
 lazy-lock.json
 spell
+
+# kando
+Singleton*
+session
