@@ -83,7 +83,8 @@
       },
       "shortcut": "Control+Space",
       "shortcutID": "main-menu",
-      "centered": false
+      "centered": false,
+      "hoverMode": true
     },
     {
       "root": {
