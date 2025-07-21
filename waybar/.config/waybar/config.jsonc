@@ -10,7 +10,7 @@
         "sway/scratchpad",
     ],
     "modules-center": [
-        "sway/window"
+        "mpris",
     ],
     "modules-right": [
         "pulseaudio",
@@ -64,6 +64,19 @@
         "tooltip-format": "{ifname} via {gwaddr} 🌐",
         "format-linked": "{ifname} (No IP) 🌐",
         "format-disconnected": "Disconnected ⚠",
+    },
+    "mpris": {
+        "format": "{player_icon} ({status_icon}) {dynamic}",
+        "format-paused": "{player_icon} ({status_icon}) <i>{dynamic}</i>",
+        "tooltip-format": "{player} ({status}) {position}/{length}",
+        "dynamic-order": [ "title", "artist", "album", ],
+        "player-icons": {
+            "firefox": "󰈹"
+        },
+        "status-icons": {
+            "playing": "▶",
+            "paused": "⏸"
+        },
     },
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
