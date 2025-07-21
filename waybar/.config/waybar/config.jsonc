@@ -67,7 +67,7 @@
     },
     "mpris": {
         "format": "{player_icon} ({status_icon}) {dynamic}",
-        "format-paused": "{player_icon} ({status_icon}) <i>{dynamic}</i>",
+        "format-paused": "<i>{player_icon} ({status_icon}) {dynamic}</i>",
         "tooltip-format": "{player} ({status}) {position}/{length}",
         "dynamic-order": [ "title", "artist", "album", ],
         "player-icons": {
