@@ -70,7 +70,7 @@
         "format-paused": "<i>{player_icon} ({status_icon}) {dynamic}</i>",
         "tooltip-format": "{player} ({status}) {position}/{length}",
         "dynamic-order": [ "title", "artist", "album", ],
-        "title-len": 30,
+        "title-len": 40,
         "player-icons": {
             "firefox": "󰈹",
             "chromium": ""
