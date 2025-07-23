@@ -72,7 +72,8 @@
         "dynamic-order": [ "title", "artist", "album", ],
         "title-len": 30,
         "player-icons": {
-            "firefox": "󰈹"
+            "firefox": "󰈹",
+            "chromium": ""
         },
         "status-icons": {
             "playing": "▶",
