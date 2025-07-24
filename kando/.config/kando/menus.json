@@ -39,19 +39,39 @@
             ]
           },
           {
-            "type": "command",
-            "data": {
-              "command": "firefox",
-              "delayed": false
-            },
-            "name": "Firefox",
-            "icon": "firefoxbrowser",
-            "iconTheme": "simple-icons",
-            "angle": 90
+            "type": "submenu",
+            "data": {},
+            "name": "Apps",
+            "icon": "apps",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "firefox",
+                  "delayed": false
+                },
+                "name": "Firefox",
+                "icon": "firefoxbrowser",
+                "iconTheme": "simple-icons",
+                "angle": 90
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "ghostty"
+                },
+                "name": "Terminal",
+                "icon": "terminal",
+                "iconTheme": "material-symbols-rounded",
+                "angle": 270
+              }
+            ],
+            "angle": 0
           },
           {
             "type": "submenu",
-            "name": "Audio",
+            "name": "Media",
             "icon": "play_circle",
             "iconTheme": "material-symbols-rounded",
             "children": [
@@ -66,18 +86,7 @@
                 "iconTheme": "material-symbols-rounded",
                 "angle": 90
               }
-            ],
-            "angle": 180
-          },
-          {
-            "type": "command",
-            "data": {
-              "command": "ghostty"
-            },
-            "name": "Terminal",
-            "icon": "terminal",
-            "iconTheme": "material-symbols-rounded",
-            "angle": 270
+            ]
           }
         ]
       },
