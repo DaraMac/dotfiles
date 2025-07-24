@@ -10,7 +10,113 @@
           {
             "type": "submenu",
             "data": {},
-            "name": "Windows",
+            "name": "Apps",
+            "icon": "apps",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "ferdium",
+                  "delayed": false
+                },
+                "name": "Messages",
+                "icon": "phone_iphone",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "thunderbird",
+                  "delayed": false
+                },
+                "name": "Mail",
+                "icon": "mail",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "firefox",
+                  "delayed": false
+                },
+                "name": "Firefox",
+                "icon": "firefoxbrowser",
+                "iconTheme": "simple-icons"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "ghostty"
+                },
+                "name": "Terminal",
+                "icon": "terminal",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "gnome-calendar",
+                  "delayed": false
+                },
+                "name": "Calendar",
+                "icon": "calendar_month",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "env ANKI_WAYLAND=1 anki",
+                  "delayed": false
+                },
+                "name": "Anki",
+                "icon": "star_shine",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "submenu",
+            "name": "Media",
+            "icon": "play_circle",
+            "iconTheme": "material-symbols-rounded",
+            "children": [
+              {
+                "type": "command",
+                "data": {
+                  "command": "overskride",
+                  "delayed": false
+                },
+                "name": "Bluetooth",
+                "icon": "bluetooth",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "pavucontrol",
+                  "delayed": false
+                },
+                "name": "Volume Control",
+                "icon": "volume_up",
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "hotkey",
+                "data": {
+                  "hotkey": "MediaPlayPause",
+                  "delayed": false
+                },
+                "name": "Play / Pause",
+                "icon": "play_pause",
+                "iconTheme": "material-symbols-rounded"
+              }
+            ]
+          },
+          {
+            "type": "submenu",
+            "data": {},
+            "name": "System",
             "icon": "select_window",
             "iconTheme": "material-symbols-rounded",
             "children": [
@@ -22,8 +128,17 @@
                 },
                 "name": "Close Window",
                 "icon": "tab_close",
-                "iconTheme": "material-symbols-rounded",
-                "angle": 90
+                "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "data": {
+                  "command": "grim -g \"$(slurp)\" - | wl-copy",
+                  "delayed": false
+                },
+                "name": "Screenshot",
+                "icon": "photo_library",
+                "iconTheme": "material-symbols-rounded"
               },
               {
                 "type": "command",
@@ -33,58 +148,7 @@
                 },
                 "name": "Lock Screen",
                 "icon": "lock",
-                "iconTheme": "material-symbols-rounded",
-                "angle": 270
-              }
-            ]
-          },
-          {
-            "type": "submenu",
-            "data": {},
-            "name": "Apps",
-            "icon": "apps",
-            "iconTheme": "material-symbols-rounded",
-            "children": [
-              {
-                "type": "command",
-                "data": {
-                  "command": "firefox",
-                  "delayed": false
-                },
-                "name": "Firefox",
-                "icon": "firefoxbrowser",
-                "iconTheme": "simple-icons",
-                "angle": 90
-              },
-              {
-                "type": "command",
-                "data": {
-                  "command": "ghostty"
-                },
-                "name": "Terminal",
-                "icon": "terminal",
-                "iconTheme": "material-symbols-rounded",
-                "angle": 270
-              }
-            ],
-            "angle": 0
-          },
-          {
-            "type": "submenu",
-            "name": "Media",
-            "icon": "play_circle",
-            "iconTheme": "material-symbols-rounded",
-            "children": [
-              {
-                "type": "hotkey",
-                "data": {
-                  "hotkey": "MediaPlayPause",
-                  "delayed": false
-                },
-                "name": "Play / Pause",
-                "icon": "play_pause",
-                "iconTheme": "material-symbols-rounded",
-                "angle": 90
+                "iconTheme": "material-symbols-rounded"
               }
             ]
           }
