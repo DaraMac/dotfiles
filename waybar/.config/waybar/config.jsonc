@@ -20,6 +20,7 @@
         "bluetooth",
         "battery", // laptop only
         "tray",
+        "group/group-power"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -51,7 +52,11 @@
                 "today":    "<span color='#ff6699'><b><u>{}</u></b></span>"
             }
         },
-        "on-click": "gnome-calendar"
+        "on-click": "gnome-calendar",
+        "actions": {
+            "on-scroll-down": "shift_up",
+            "on-scroll-up": "shift_down"
+        }
     },
     "clock#time": {
         "format": "{:%H:%M} ",
@@ -118,11 +123,49 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
     },
+    "group/group-power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-power",
+            "transition-left-to-right": false,
+        },
+        "modules": [
+            "custom/power", // First element is the "group leader" and won't ever be hidden
+            "custom/quit",
+            "custom/lock",
+            "custom/reboot",
+        ]
+    },
+    "custom/quit": {
+        "format": "󰗼",
+        "tooltip": true,
+        "tooltip-format": "Logout",
+        "on-click": "hyprctl dispatch exit"
+    },
+    "custom/lock": {
+        "format": "󰍁",
+        "tooltip": true,
+        "tooltip-format": "Lock",
+        "on-click": "swaylock"
+    },
+    "custom/reboot": {
+        "format": "󰜉",
+        "tooltip": true,
+        "tooltip-format": "Reboot",
+        "on-click": "reboot"
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": true,
+        "tooltip-format": "Power Off",
+        "on-click": "shutdown now"
+    }
 },
 {
     // output on all monitors EXCEPT the main monitor
