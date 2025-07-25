@@ -71,9 +71,12 @@
         "tooltip-format": "{player} ({status}) {position}/{length}",
         "dynamic-order": [ "title", "artist", "album", ],
         "title-len": 40,
+        "album-len": 40,
+        "dynamic-len": 100,
         "player-icons": {
             "firefox": "󰈹",
-            "chromium": ""
+            "chromium": "",
+            "kdeconnect":""
         },
         "status-icons": {
             "playing": "▶",
