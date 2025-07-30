@@ -143,19 +143,19 @@
         ]
     },
     "custom/quit": {
-        "format": "󰗼",
+        "format": "󰗼 ",
         "tooltip": true,
         "tooltip-format": "Logout",
         "on-click": "hyprctl dispatch exit"
     },
     "custom/lock": {
-        "format": "󰍁",
+        "format": " 󰍁 ",
         "tooltip": true,
         "tooltip-format": "Lock",
-        "on-click": "swaylock"
+        "on-click": "hyprlock"
     },
     "custom/reboot": {
-        "format": "󰜉",
+        "format": " 󰜉 ",
         "tooltip": true,
         "tooltip-format": "Reboot",
         "on-click": "reboot"
