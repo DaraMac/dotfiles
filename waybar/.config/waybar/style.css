@@ -50,15 +50,13 @@ window#waybar.hidden {
   background-color: #f38ba8;
 }
 
-#memory,
-#custom-power,
 #battery,
 #backlight,
-#wireplumber,
 #network,
 #pulseaudio,
 #bluetooth,
 #clock,
+#custom-power,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -68,24 +66,24 @@ window#waybar.hidden {
 }
 
 #custom-power {
-  margin-right: 6px;
+    background-color: #f38ba8;
+    padding: 6px 12px;
 }
 
-#custom-logo {
-  padding-right: 7px;
-  padding-left: 7px;
-  margin-left: 5px;
-  font-size: 15px;
-  border-radius: 8px 0px 0px 8px;
-  color: #1793d1;
+#custom-quit {
+    color: #f38ba8;
 }
 
-#memory {
-  background-color: #fab387;
+#custom-lock {
+    color: #a6e3a1;
+}
+
+#custom-reboot {
+    color: #74c7ec;
 }
 
 #battery {
-  background-color: #f38ba8;
+  background-color: #f9e2af;
 }
 
 #battery.warning,
@@ -102,10 +100,6 @@ window#waybar.hidden {
 
 #backlight {
   background-color: #fab387;
-}
-
-#wireplumber {
-  background-color: #f9e2af;
 }
 
 #network {
@@ -136,10 +130,6 @@ window#waybar.hidden {
 #pulseaudio {
   font-family: JetBrainsMono Nerd Font;
   background-color: #f5bde6;
-}
-
-#custom-power {
-  background-color: #f2cdcd;
 }
 
 tooltip {
