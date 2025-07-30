@@ -7,10 +7,10 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
-        "sway/scratchpad",
+        "sway/scratchpad"
     ],
     "modules-center": [
-        "mpris",
+        "mpris"
     ],
     "modules-right": [
         "pulseaudio",
@@ -39,7 +39,7 @@
         "tooltip-format": "{app}: {title}"
     },
     "tray": {
-        "spacing": 10,
+        "spacing": 10
     },
     "clock#calendar": {
         "format": "{:%Y-%m-%d %a} ",
@@ -68,13 +68,13 @@
         "format-ethernet": "{ipaddr}/{cidr} 🌐",
         "tooltip-format": "{ifname} via {gwaddr} 🌐",
         "format-linked": "{ifname} (No IP) 🌐",
-        "format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "Disconnected ⚠"
     },
     "mpris": {
-        "format": "{player_icon} ({status_icon}) {dynamic}",
-        "format-paused": "<i>{player_icon} ({status_icon}) {dynamic}</i>",
-        "tooltip-format": "{player} ({status}) {position}/{length}",
-        "dynamic-order": [ "title", "artist", "album", ],
+        "format": "{player_icon} ({status_icon}) {title}",
+        "format-paused": "<i>{player_icon} ({status_icon}) {title}</i>",
+        "tooltip-format": "{player}: {artist}",
+        "dynamic-order": [ "title", "artist", "album" ],
         "title-len": 40,
         "album-len": 40,
         "dynamic-len": 100,
@@ -86,10 +86,10 @@
         "status-icons": {
             "playing": "▶",
             "paused": "⏸"
-        },
+        }
     },
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": "󰝟 {icon} {format_source}",
         "format-muted": "󰝟 {format_source}",
@@ -133,13 +133,13 @@
         "drawer": {
             "transition-duration": 250,
             "children-class": "not-power",
-            "transition-left-to-right": false,
+            "transition-left-to-right": false
         },
         "modules": [
             "custom/power", // First element is the "group leader" and won't ever be hidden
             "custom/quit",
             "custom/lock",
-            "custom/reboot",
+            "custom/reboot"
         ]
     },
     "custom/quit": {
