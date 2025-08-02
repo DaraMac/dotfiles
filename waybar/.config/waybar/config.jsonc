@@ -16,10 +16,9 @@
         "pulseaudio",
         "clock#calendar",
         "clock#time",
-        "battery", // laptop only
         "group/signals",
-        "tray",
-        "group/group-power"
+        "group/group-power",
+        "tray"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -135,6 +134,7 @@
         },
         "modules": [
             "bluetooth",
+            "battery",
             "network"
         ]
     },
@@ -146,10 +146,11 @@
             "transition-left-to-right": false
         },
         "modules": [
-            "custom/power", // First element is the "group leader" and won't ever be hidden
+            "custom/computer-menu", // First element is the group leader and wont be hidden
             "custom/quit",
             "custom/lock",
-            "custom/reboot"
+            "custom/reboot",
+            "custom/power"
         ]
     },
     "custom/quit": {
@@ -171,10 +172,15 @@
         "on-click": "reboot"
     },
     "custom/power": {
-        "format": "",
+        "format": "  ",
         "tooltip": true,
         "tooltip-format": "Power Off",
         "on-click": "shutdown now"
+    },
+    "custom/computer-menu": {
+        "format": "󰇅",
+        "tooltip": true,
+        "tooltip-format": "Power Menu"
     }
 },
 {
