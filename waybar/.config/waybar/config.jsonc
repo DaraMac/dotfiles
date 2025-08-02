@@ -14,11 +14,10 @@
     ],
     "modules-right": [
         "pulseaudio",
-        "network",
         "clock#calendar",
         "clock#time",
         "battery", // laptop only
-        "bluetooth",
+        "group/signals",
         "tray",
         "group/group-power"
     ],
@@ -62,13 +61,6 @@
         "format": "{:%H:%M} ",
         "tooltip-format": "{:%I:%M %p %Z %z}",
         "on-click": "gnome-clocks"
-    },
-    "network": {
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} 🌐",
-        "tooltip-format": "{ifname} via {gwaddr} 🌐",
-        "format-linked": "{ifname} (No IP) 🌐",
-        "format-disconnected": "Disconnected ⚠"
     },
     "mpris": {
         "format": "{player_icon} ({status_icon}) {title}",
@@ -116,6 +108,13 @@
         "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
         "on-click": "overskride"
     },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} 🌐",
+        "tooltip-format": "{ifname} via {gwaddr} 🌐",
+        "format-linked": "{ifname} (No IP) 🌐",
+        "format-disconnected": "Disconnected ⚠"
+    },
     "battery": {
         "states": {
             "warning": 30,
@@ -127,6 +126,17 @@
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         "format-icons": ["", "", "", "", ""]
+    },
+    "group/signals": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 250,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "bluetooth",
+            "network"
+        ]
     },
     "group/group-power": {
         "orientation": "inherit",
