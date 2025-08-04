@@ -17,7 +17,6 @@
         "clock#calendar",
         "clock#time",
         "group/signals",
-        "group/group-power",
         "tray"
     ],
     // Modules configuration
