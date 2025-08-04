@@ -1,19 +1,26 @@
 {
   "locale": "auto",
   "showIntroductionDialog": false,
-  "menuTheme": "default",
+  "menuTheme": "rainbow-labels",
   "darkMenuTheme": "default",
-  "menuThemeColors": {},
+  "menuThemeColors": {
+    "default": {
+      "hover-color": "rgb(255 200 200)",
+      "border-color": "rgb(109 109 109)",
+      "text-color": "rgb(60 60 60)",
+      "background-color": "rgb(255 255 255)"
+    }
+  },
   "darkMenuThemeColors": {},
   "enableDarkModeForMenuThemes": false,
   "soundTheme": "none",
   "soundVolume": 0.5,
   "ignoreWriteProtectedConfigFiles": false,
   "settingsWindowColorScheme": "system",
-  "settingsWindowFlavor": "transparent-system",
-  "trayIconFlavor": "color",
+  "settingsWindowFlavor": "sakura-system",
+  "trayIconFlavor": "none",
   "lazyInitialization": false,
-  "enableVersionCheck": true,
+  "enableVersionCheck": false,
   "zoomFactor": 1,
   "centerDeadZone": 50,
   "minParentDistance": 150,
@@ -34,8 +41,8 @@
   "enableGamepad": true,
   "gamepadBackButton": 1,
   "gamepadCloseButton": 2,
-  "sameShortcutBehavior": "nothing",
+  "sameShortcutBehavior": "close",
   "useDefaultOsShowSettingsHotkey": true,
-  "hideSettingsButton": false,
-  "settingsButtonPosition": "bottom-right"
+  "hideSettingsButton": true,
+  "settingsButtonPosition": "top-right"
 }

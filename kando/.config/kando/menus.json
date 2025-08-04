@@ -506,7 +506,7 @@
         ]
       },
       "shortcut": "",
-      "shortcutID": "",
+      "shortcutID": "test",
       "centered": false,
       "tags": [
         "template"
