@@ -342,7 +342,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
-    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "rofi"; }
+    Mod+D hotkey-overlay-title="Run an Application: rofi" { spawn "" "rofi"; }
+    // $menu = rofi -show combi -combi-modes "window,drun" -modes "combi,emoji:rofimoji,calc" -show-icons -m DP-1 -terse -calc-command "echo -n '{result}' | wl-copy"
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
