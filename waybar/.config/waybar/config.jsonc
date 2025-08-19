@@ -127,7 +127,8 @@
         "modules": [
             "bluetooth",
             "battery",
-            "network"
+            "network",
+            "custom/logout"
         ]
     },
     "group/group-power": {
@@ -144,6 +145,12 @@
             "custom/reboot",
             "custom/power"
         ]
+    },
+    "custom/logout": {
+        "format": " 󰗼 ",
+        "tooltip": true,
+        "tooltip-format": "Logout menu",
+        "on-click": "wlogout --buttons-per-row 4"
     },
     "custom/quit": {
         "format": " 󰗼 ",

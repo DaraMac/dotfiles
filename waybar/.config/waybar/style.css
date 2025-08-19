@@ -55,7 +55,7 @@ window#waybar.hidden {
 #pulseaudio,
 #bluetooth,
 #clock,
-#custom-computer-menu,
+#custom-logout,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -64,9 +64,9 @@ window#waybar.hidden {
   color: #181825;
 }
 
-#custom-computer-menu {
-    background-color: #8aadf4;
-    padding: 6px 12px;
+#custom-logout {
+    background-color: #f5a97f;
+    padding: 6px 6px;
 }
 
 #custom-quit {
