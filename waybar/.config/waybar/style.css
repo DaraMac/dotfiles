@@ -69,22 +69,6 @@ window#waybar.hidden {
     padding: 6px 6px;
 }
 
-#custom-quit {
-    color: #f38ba8;
-}
-
-#custom-lock {
-    color: #a6e3a1;
-}
-
-#custom-reboot {
-    color: #74c7ec;
-}
-
-#custom-power {
-    color: #eed49f;
-}
-
 #battery {
   background-color: #f9e2af;
 }

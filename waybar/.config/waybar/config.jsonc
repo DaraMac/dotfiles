@@ -151,35 +151,6 @@
         "tooltip": true,
         "tooltip-format": "Logout menu",
         "on-click": "wlogout --buttons-per-row 4"
-    },
-    "custom/quit": {
-        "format": " 󰗼 ",
-        "tooltip": true,
-        "tooltip-format": "Logout",
-        "on-click": "hyprctl dispatch exit"
-    },
-    "custom/lock": {
-        "format": " 󰍁 ",
-        "tooltip": true,
-        "tooltip-format": "Lock",
-        "on-click": "hyprlock"
-    },
-    "custom/reboot": {
-        "format": " 󰜉 ",
-        "tooltip": true,
-        "tooltip-format": "Reboot",
-        "on-click": "reboot"
-    },
-    "custom/power": {
-        "format": "  ",
-        "tooltip": true,
-        "tooltip-format": "Power Off",
-        "on-click": "shutdown now"
-    },
-    "custom/computer-menu": {
-        "format": "󰇅",
-        "tooltip": true,
-        "tooltip-format": "Power Menu"
     }
 },
 {
