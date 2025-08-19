@@ -128,7 +128,8 @@
                 },
                 "name": "Close Window",
                 "icon": "tab_close",
-                "iconTheme": "material-symbols-rounded"
+                "iconTheme": "material-symbols-rounded",
+                "angle": 105
               },
               {
                 "type": "command",
@@ -139,6 +140,18 @@
                 "name": "Screenshot",
                 "icon": "photo_library",
                 "iconTheme": "material-symbols-rounded"
+              },
+              {
+                "type": "command",
+                "name": "Logout",
+                "icon": "exit_to_app",
+                "iconTheme": "material-symbols-rounded",
+                "data": {
+                  "command": "wlogout --buttons-per-row 4",
+                  "detached": true,
+                  "isolated": false,
+                  "delayed": false
+                }
               },
               {
                 "type": "command",
