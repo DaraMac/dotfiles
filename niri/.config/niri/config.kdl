@@ -333,7 +333,7 @@ binds {
     Ctrl+Space hotkey-overlay-title="Run pie menu: kando" { spawn "kando"; }
 
     Mod+Shift+O hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
-    Mod+Shift+E hotkey-overlay-title="Logout menu" { spawn "wlogout" "--buttons-per-row" "4"; }
+    Mod+Shift+E hotkey-overlay-title="Logout menu: wlogout" { spawn "wlogout" "--buttons-per-row" "4"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
