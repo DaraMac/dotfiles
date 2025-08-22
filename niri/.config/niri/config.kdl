@@ -69,7 +69,6 @@ input {
 // The built-in laptop monitor is usually called "eDP-1".
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
-// Remember to uncomment the node by removing "/-"!
 output "Lenovo Group Limited LEN G32qc-10 UMW090HA" {
     mode "2560x1440@143.912"
     position x=1440 y=750
@@ -79,6 +78,12 @@ output "Iiyama North America PL2760Q 1154115101184" {
      mode "2560x1440@143.856"
      transform "90"
      position x=0 y=0
+}
+
+// Dell XPS laptop display
+output "Sharp Corporation 0x14B9 Unknown" {
+    mode "3840x2160@59.997"
+    scale 2.0
 }
 
 // Settings that influence how windows are positioned and sized.
