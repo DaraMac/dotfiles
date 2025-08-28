@@ -2,6 +2,7 @@
 [{
     // main monitor options
     "output": ["DP-1", "eDP-1"],
+    "layer": "top",
     // "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
     "modules-left": [
