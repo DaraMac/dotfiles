@@ -68,6 +68,7 @@ window#waybar.hidden {
 #mpris {
     color: #c6d0f5;
     background: transparent;
+    border: 1px #c6d0f5 solid;
 }
 
 #custom-logout {
