@@ -107,6 +107,10 @@ layout {
     }
 }
 
+overview {
+    backdrop-color "#181926"
+}
+
 spawn-at-startup "swww-daemon"  // wallpaper
 spawn-at-startup "waybar"       // bar
 spawn-at-startup "dunst"        // notifications
