@@ -46,6 +46,11 @@ output "Sharp Corporation 0x14B9 Unknown" {
     scale 2.0
 }
 
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 24
+}
+
 layout {
     // Set gaps around windows in logical pixels.
     gaps 0
