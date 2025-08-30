@@ -9,3 +9,7 @@ night_gamma = 90                # Gamma percentage for night (10-100%)
 day_gamma = 100                 # Gamma percentage for day (10-100%)
 update_interval = 60            # Update frequency during transitions in seconds (10-300)
 transition_mode = "geo"         # Select: "geo", "finish_by", "start_at", "center"
+
+#[Manual transitions]
+sunset  = "00:00:00"  # ignored in geo mode
+sunrise = "12:00:00"  # ignored in geo mode
