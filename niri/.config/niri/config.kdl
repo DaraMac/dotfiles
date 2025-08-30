@@ -1,3 +1,9 @@
+spawn-at-startup "sunsetr"      // blue light filter
+spawn-at-startup "swww-daemon"  // wallpaper
+spawn-at-startup "waybar"       // bar
+spawn-at-startup "dunst"        // notifications
+spawn-at-startup "kando"        // pie menu
+
 input {
     keyboard {
         xkb {
@@ -115,11 +121,6 @@ layout {
 overview {
     backdrop-color "#181926"
 }
-
-spawn-at-startup "swww-daemon"  // wallpaper
-spawn-at-startup "waybar"       // bar
-spawn-at-startup "dunst"        // notifications
-spawn-at-startup "kando"        // pie menu
 
 // Ask the clients to omit their client-side decorations if possible
 prefer-no-csd
