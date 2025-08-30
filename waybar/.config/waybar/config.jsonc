@@ -3,7 +3,6 @@
     // main monitor options
     "output": ["DP-1", "eDP-1"],
     "layer": "top",
-    // "height": 30, // Waybar height (to be removed for auto height)
     "spacing": 0, // Gaps between modules (4px)
     "modules-left": [
         "hyprland/workspaces",
@@ -179,7 +178,7 @@
 },
 {
     "output": "DP-3",
-    // "height": 40, // Waybar height (to be removed for auto height)
+    "layer": "top",
     "spacing": 0, // Gaps between modules (4px)
 
     // Choose the order of the modules
