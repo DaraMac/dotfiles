@@ -162,6 +162,11 @@ window-rule {
     default-column-width {proportion 1.0; }
 }
 
+window-rule {
+    match app-id="ghostty"
+    default-column-width {proportion 0.5; }
+}
+
 binds {
     // Mod-Shift-/ shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
