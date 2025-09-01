@@ -66,13 +66,12 @@ layout {
 
     // Customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
-        proportion 0.33333
         proportion 0.5
-        proportion 0.66667
+        proportion 1.0
     }
 
     // The default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 1.0; }
 
     // Change how the focus ring looks.
     focus-ring {
@@ -314,7 +313,8 @@ binds {
     Mod+Shift+R { switch-preset-window-height; }
     Mod+Ctrl+R { reset-window-height; }
 
-    Mod+Shift+F { maximize-column; }
+    // Mod+Shift+F { maximize-column; }
+    Mod+Shift+F { switch-preset-column-width; }
     Mod+Ctrl+F { toggle-windowed-fullscreen; }
     Mod+F { fullscreen-window; }
 
