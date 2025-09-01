@@ -169,7 +169,8 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+B      hotkey-overlay-title="Open Browser: firefox"    { spawn "firefox"; }
     Mod+Space hotkey-overlay-title="Run an Application: rofi"  { spawn "sh" "-c" "rofi -show combi -combi-modes window,drun -modes combi,emoji:rofimoji,calc -show-icons -calc-command \"echo -n '{result}' | wl-copy\""; }
-    Ctrl+Space hotkey-overlay-title="Run pie menu: kando" { spawn "kando"; }
+    Ctrl+Space hotkey-overlay-title="Run pie menu: kando" { spawn "kando" "--menu" "Main Menu"; }
+    MouseBack hotkey-overlay-title="Run pie menu: kando" { spawn "kando" "--menu" "Main Menu"; }
 
     Mod+Shift+O hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+Shift+E hotkey-overlay-title="Logout menu: wlogout" { spawn "wlogout" "--buttons-per-row" "4"; }
