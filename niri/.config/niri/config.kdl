@@ -33,6 +33,7 @@ input {
 }
 
 // You can configure outputs by their name, which you can find by running `niri msg outputs`
+
 // Wide desktop monitor
 output "Lenovo Group Limited LEN G32qc-10 UMW090HA" {
     mode "2560x1440@143.912"
@@ -49,7 +50,7 @@ output "Iiyama North America PL2760Q 1154115101184" {
 // Dell XPS laptop display
 output "Sharp Corporation 0x14B9 Unknown" {
     mode "3840x2160@59.997"
-    scale 2.0
+    scale 2
 }
 
 cursor {
@@ -153,6 +154,13 @@ window-rule {
 window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
+}
+
+// Make Ferdium open on vertical monitor (on desktop) and be full width
+window-rule {
+    match app-id="ferdium"
+    open-on-output "Iiyama North America PL2760Q 1154115101184"
+    default-column-width {proportion 1.0; }
 }
 
 binds {
