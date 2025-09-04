@@ -131,7 +131,6 @@ hotkey-overlay {
 
 // The path is formatted with strftime(3) to give the screenshot date and time
 // screenshot-path "~/Pictures/Screenshots/Screenshot-%Y-%m-%dT%H:%M:%S.png"
-
 // Set this to null to disable saving screenshots to disk.
 screenshot-path null
 
@@ -168,7 +167,6 @@ window-rule {
 }
 
 binds {
-    // Mod-Shift-/ shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
@@ -180,11 +178,14 @@ binds {
     Mod+Shift+O hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+Shift+E hotkey-overlay-title="Logout menu: wlogout" { spawn "wlogout" "--buttons-per-row" "4"; }
 
+    Mod+Shift+N hotkey-overlay-title="Pull up notifications history" {spawn "dunstctl" "history-pop";}
+
     // The allow-when-locked=true property makes them work even when the session is locked.
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
+
     XF86MonBrightnessUp   allow-when-locked=true { spawn "brightnessctl" "s" "10%+"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessctl" "s" "10%-"; }
 
