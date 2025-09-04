@@ -71,7 +71,7 @@ layout {
     }
 
     // The default width of the new windows.
-    default-column-width { proportion 1.0; }
+    default-column-width { proportion 0.5; }
 
     // Change how the focus ring looks.
     focus-ring {
