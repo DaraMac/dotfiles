@@ -26,6 +26,7 @@ window#waybar.hidden {
 #bluetooth,
 #clock,
 #custom-logout,
+#custom-notifications,
 #mpris,
 #tray {
   border-radius: 4px;
@@ -44,6 +45,11 @@ window#waybar.hidden {
 #custom-logout {
     background-color: #f5a97f;
     padding: 6px 6px;
+}
+
+#custom-notifications {
+    background-color: #f5a97f;
+    padding: 6px 12px;
 }
 
 #battery {
