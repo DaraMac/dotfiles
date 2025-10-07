@@ -183,33 +183,5 @@
         "tooltip": true,
         "tooltip-format": "Toggle notifications"
     }
-},
-{
-    "output": "DP-3",
-    "layer": "top",
-    "spacing": 0, // Gaps between modules (4px)
-
-    // Choose the order of the modules
-    "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/submap",
-        "niri/workspaces"
-    ],
-    // Modules configuration
-    "hyprland/submap": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "niri/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "1": " ",
-            "2": " ",
-            "3": " ",
-            "4": " ",
-            "5": " ",
-            "urgent": " ",
-            "active": " ",
-            "default": " "
-            }
-    }
-}]
+}
+]
