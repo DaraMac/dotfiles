@@ -179,15 +179,10 @@ window-rule {
     default-column-width {proportion 1.0; }
 }
 
-window-rule {
-    match app-id="ghostty"
-    default-column-width {proportion 0.5; }
-}
-
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
-    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Return hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty" "+new-window"; }
     Mod+B      hotkey-overlay-title="Open Browser: firefox"    { spawn "firefox"; }
     Mod+Space hotkey-overlay-title="Run an Application: rofi"  { spawn "sh" "-c" "rofi -show combi -combi-modes window,drun -modes combi,emoji:rofimoji,calc -show-icons -calc-command \"echo -n '{result}' | wl-copy\""; }
     Ctrl+Space hotkey-overlay-title="Run pie menu: kando" { spawn "kando" "--menu" "Main Menu"; }
