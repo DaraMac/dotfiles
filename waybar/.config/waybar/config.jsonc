@@ -87,7 +87,8 @@
         "player-icons": {
             "firefox": "󰈹",
             "chromium": "",
-            "kdeconnect":""
+            "kdeconnect":"",
+            "de":"" // Shortwave radio
         },
         "status-icons": {
             "playing": "▶",
