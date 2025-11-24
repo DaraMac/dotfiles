@@ -152,6 +152,12 @@ hotkey-overlay {
 // Set this to null to disable saving screenshots to disk.
 screenshot-path null
 
+// Enable rounded corners for all windows.
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
 window-rule {
     match title="Kando Menu"
     // match title="main-menu"
@@ -164,12 +170,6 @@ window-rule {
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
-}
-
-// Enable rounded corners for all windows.
-window-rule {
-    geometry-corner-radius 12
-    clip-to-geometry true
 }
 
 // Make Ferdium open on vertical monitor (on desktop) and be full width
