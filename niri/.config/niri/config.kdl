@@ -176,7 +176,12 @@ window-rule {
 window-rule {
     match app-id="ferdium"
     open-on-output "Iiyama North America PL2760Q 1154115101184"
-    default-column-width {proportion 1.0; }
+    default-column-width { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="clocks"
+    default-column-width { proportion 0.18; }
 }
 
 binds {
