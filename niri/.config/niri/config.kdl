@@ -184,6 +184,11 @@ window-rule {
     default-column-width { proportion 0.18; }
 }
 
+window-rule {
+    match app-id="Overskride"
+    default-column-width { proportion 0.33; }
+}
+
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
