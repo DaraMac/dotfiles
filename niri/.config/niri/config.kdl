@@ -181,7 +181,7 @@ window-rule {
 
 window-rule {
     match app-id="clocks"
-    default-column-width { proportion 0.18; }
+    default-column-width { proportion 0.12; }
 }
 
 window-rule {
