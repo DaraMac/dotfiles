@@ -194,6 +194,11 @@ window-rule {
     default-column-width { proportion 0.33; }
 }
 
+window-rule {
+    match app-id="org.gnome.Music"
+    default-column-width { proportion 0.40; }
+}
+
 binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
