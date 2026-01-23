@@ -19,4 +19,4 @@ $pdf_previewer = 'zathura %O %S';
 # $clean_full_ext = '_minted-%R _minted-%R/* nav run.xml snm tex.bbl bbl-SAVE-ERROR tex.blg vrb';
 
 # Tell it what the main file is if there are multiple
-# @default_files = ('file.tex')
+# @default_files = ('file.tex');
