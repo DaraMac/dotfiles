@@ -1,8 +1,8 @@
 [Desktop Entry]
 Categories=Utility
-Exec=stretchly --enable-features=UseOzonePlatform --ozone-platform=wayland %U
+Exec=stretchly
 GenericName=Breaktimer
 Icon=stretchly
-Name=Stretchly Ozone
+Name=Breaktimer
 Type=Application
 Version=1.4
