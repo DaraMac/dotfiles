@@ -1,9 +1,4 @@
-icons:
-  when: never
-
-date: '+%Y-%m-%d %H:%M'
-
+date: relative
 sorting:
   dir-grouping: first
-
 symlink-arrow: →
