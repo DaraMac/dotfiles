@@ -82,6 +82,8 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 
 export EDITOR='nvim'
+export BARTIB_FILE='/Users/dara/.local/share/bartib/2026.bartib'
+export LEDGER_FILE='/Users/dara/Documents/accounts/2025/2025.journal'
 
 # Alises
 ## Neovim
