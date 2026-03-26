@@ -96,6 +96,7 @@ alias la='lsd -lA'
 alias ll='lsd -l'
 alias lr="lsd -lr"
 alias ls="lsd"
+alias lt="lsd --tree"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
