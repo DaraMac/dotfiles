@@ -1,2 +1,2 @@
 # disable ligatures
-font-family = -calt
+font-feature = -calt
