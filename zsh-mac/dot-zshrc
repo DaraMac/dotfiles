@@ -109,4 +109,6 @@ function y() {
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 eval "$(zoxide init zsh)"
