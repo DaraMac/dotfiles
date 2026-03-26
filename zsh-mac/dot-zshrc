@@ -74,16 +74,6 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
-
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -114,5 +104,8 @@ function y() {
 	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 eval "$(zoxide init zsh)"
