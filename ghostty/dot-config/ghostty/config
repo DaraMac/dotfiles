@@ -1,2 +1,7 @@
 # disable ligatures
 font-feature = -calt
+
+quit-after-last-window-closed = false
+theme = TokyoNight Night
+
+keybind = global:super+shift+enter=toggle_quick_terminal
