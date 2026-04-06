@@ -444,8 +444,7 @@ require("lazy").setup({
 			---@type table<string, vim.lsp.Config>
 			local servers = {
 				clangd = {},
-				-- gopls = {},
-				pyright = {},
+				ty = {},
 				rust_analyzer = {},
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
