@@ -90,6 +90,8 @@ export LEDGER_FILE='/Users/dara/Documents/accounts/2025/2025.journal'
 alias vi='nvim'
 alias vim='nvim'
 
+alias hl='hledger'
+
 ## fzf
 alias v="fzf --bind 'enter:become(nvim {})'"
 
