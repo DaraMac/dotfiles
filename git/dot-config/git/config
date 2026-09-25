@@ -11,7 +11,7 @@
 [pull]
     rebase = true
 [push]
-    autoSetupRemote = true
+	autoSetupRemote = true
 [user]
     name = dmac
     email = DaraMac@users.noreply.github.com
