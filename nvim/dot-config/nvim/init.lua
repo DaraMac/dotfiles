@@ -448,6 +448,7 @@ require("lazy").setup({
 				rust_analyzer = {},
 				tinymist = {},
 				jdtls = {},
+				html = {},
 
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
